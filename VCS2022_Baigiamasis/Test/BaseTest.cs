@@ -17,13 +17,14 @@ namespace VCS2022_Baigiamasis.Test
         protected static IWebDriver Driver;
 
         public static SafloraProduktoKainaPage _safloraProduktoKainaPage;
-
+        public static SafloraPrisijungimasPage _safloraPrisijungimasPage;
         [OneTimeSetUp]
         public static void OneTimeSetUp()
         {
             Driver = CustomDriver.GetChromeDriver();
 
             _safloraProduktoKainaPage = new SafloraProduktoKainaPage(Driver);
+            _safloraPrisijungimasPage = new SafloraPrisijungimasPage(Driver);
         }
         [OneTimeTearDown]
         public static void OneTimeTearDown()
