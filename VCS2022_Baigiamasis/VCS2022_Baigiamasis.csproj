@@ -60,11 +60,13 @@
     <Compile Include="Drivers\CustomDriver.cs" />
     <Compile Include="Page\BasePage.cs" />
     <Compile Include="Page\SafloraPrekesKrepselyjePage.cs" />
+    <Compile Include="Page\SafloraPrekiuAtsiemimasAdresasPage.cs" />
     <Compile Include="Page\SafloraPrisijungimasPage.cs" />
     <Compile Include="Page\SafloraProduktoKainaPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\BaseTest.cs" />
     <Compile Include="Test\SafloraPrekesKrepselyjeTest.cs" />
+    <Compile Include="Test\SafloraPrekiuAtsiemimasAdresasTest.cs" />
     <Compile Include="Test\SafloraPrisijungimasTest.cs" />
     <Compile Include="Test\SafloraProduktoKainaTest.cs" />
     <Compile Include="Tools\MakesScreenshot.cs" />
