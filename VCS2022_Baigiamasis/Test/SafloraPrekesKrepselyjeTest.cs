@@ -26,7 +26,7 @@ namespace VCS2022_Baigiamasis.Test
             _safloraPrekesKrepselyjePage.AladinasGarintuvas();
             _safloraPrekesKrepselyjePage.AladinasGarintuvasIKrepseli();
             _safloraPrekesKrepselyjePage.KrepselisButton();
-
+            _safloraPrekesKrepselyjePage.AtsisakytiPrekes();
         }
     }
 }

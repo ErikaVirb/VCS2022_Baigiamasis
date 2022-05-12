@@ -27,7 +27,7 @@ namespace VCS2022_Baigiamasis.Page
         private IWebElement _aladinasGarintuvas => Driver.FindElement(By.CssSelector("#page > ul > li.col4.product.post-19353.product.type-product.status-publish.has-post-thumbnail.product_cat-garintuvai-difuzoriai.first.instock.shipping-taxable.purchasable.product-type-variable.has-default-attributes > div.product_in.fade_woo > a.woocommerce-LoopProduct-link.woocommerce-loop-product__link"));
         private IWebElement _aladinasGarintuvasIKrepseli => Driver.FindElement(By.CssSelector("#product-19353 > div.summary.entry-summary > form > div > div.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled > button"));
         private IWebElement _krepselisButton => Driver.FindElement(By.CssSelector("#bg > div.bg_head > div.head_top_container > div.wrapper_p.top_header > div.top_con > div.toph_r > ul > li > div > div.cart_top > a"));
-        private IReadOnlyCollection<IWebElement> _atsisakytiPreles => Driver.FindElements(By.ClassName("product-remove"));
+        private IReadOnlyCollection<IWebElement> _atsisakytiPrekes => Driver.FindElements(By.ClassName("product-remove"));
 
         public void NavigateToDefaultPage()
         {
@@ -86,11 +86,19 @@ namespace VCS2022_Baigiamasis.Page
         {
             _krepselisButton.Click();
         }
+        public void AtsisakytiPrekes()
+        {
+           //foreach (IWebElement _atsisakytiPrekiu in _atsisakytiPrekes)
+           //{
+           //   _atsisakytiPrekiu.Click();
+           //}
 
+            for (int i = 5; i> _atsisakytiPrekes.Count; i++)
+            {
+                _atsisakytiPrekes.ElementAt(i).Click();
+            }
 
-
-
-
+        }
 
 
     }
