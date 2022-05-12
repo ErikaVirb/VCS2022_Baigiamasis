@@ -86,13 +86,9 @@ namespace VCS2022_Baigiamasis.Page
         {
             _krepselisButton.Click();
         }
-        public void AtsisakytiPrekes()
+        public void AtsisakytiPrekiu()
         {
-           //foreach (IWebElement _atsisakytiPrekiu in _atsisakytiPrekes)
-           //{
-           //   _atsisakytiPrekiu.Click();
-           //}
-
+         
             for (int i = 5; i> _atsisakytiPrekes.Count; i++)
             {
                 _atsisakytiPrekes.ElementAt(i).Click();
