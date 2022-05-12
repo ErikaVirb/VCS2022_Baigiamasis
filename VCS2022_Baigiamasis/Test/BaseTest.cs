@@ -19,7 +19,8 @@ namespace VCS2022_Baigiamasis.Test
         public static SafloraProduktoKainaPage _safloraProduktoKainaPage;
         public static SafloraPrisijungimasPage _safloraPrisijungimasPage;
         public static SafloraPrekesKrepselyjePage _safloraPrekesKrepselyjePage;
-        public static SafloraPrekiuAtsiemimasAdresasPage _safloraPrekiuAtsiemimasAdresasPage;
+        public static SafloraPrekiuKrepselioSumaPage _safloraPrekiuKrepselioSumaPage;
+        public static SafloraPrekiuKrepselioIstustinimasPage _safloraPrekiuKrepselioIstustinimasPage;
 
         [OneTimeSetUp]
         public static void OneTimeSetUp()
@@ -29,7 +30,8 @@ namespace VCS2022_Baigiamasis.Test
             _safloraProduktoKainaPage = new SafloraProduktoKainaPage(Driver);
             _safloraPrisijungimasPage = new SafloraPrisijungimasPage(Driver);
             _safloraPrekesKrepselyjePage = new SafloraPrekesKrepselyjePage(Driver);
-            _safloraPrekiuAtsiemimasAdresasPage = new SafloraPrekiuAtsiemimasAdresasPage(Driver);
+            _safloraPrekiuKrepselioSumaPage = new SafloraPrekiuKrepselioSumaPage(Driver);
+            _safloraPrekiuKrepselioIstustinimasPage = new SafloraPrekiuKrepselioIstustinimasPage(Driver);
         }
         [OneTimeTearDown]
         public static void OneTimeTearDown()
